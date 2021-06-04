@@ -32,4 +32,4 @@ int main(void) {
   p=(float) ((4*n*n)/4*n*n-1);
   
   return p=2*p;
-  
+  }
