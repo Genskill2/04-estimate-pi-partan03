@@ -28,9 +28,8 @@ int main(void) {
   float wallis_pi(int iterations){
   
   float pi=1.0;
-  int i;
  
-  for (i=1;i<iterations;i++){
+  for (int i=1;i<iterations;i++){
   
   long double num=4.0*i*i;
   
@@ -39,4 +38,3 @@ int main(void) {
   return pi*2;
   
   }
-  
