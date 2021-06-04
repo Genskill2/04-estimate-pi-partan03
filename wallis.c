@@ -24,12 +24,19 @@ int main(void) {
   }
 }
 
-  float wallis_pi(int n){
-  float p;
+
+  float wallis_pi(int iterations){
+  
+  float pi=1.0;
   int i;
+ 
+  for (i=1;i<iterations;i++){
   
-  for (i=1;i<n;i++)
-  p=(float) ((4*n*n)/4*n*n-1);
+  long double num=4.0*i*i;
   
-  return p=2*p;
+  pi*=num/(num-1);
   }
+  return pi*2;
+  
+  }
+  
